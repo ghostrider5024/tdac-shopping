@@ -52,7 +52,7 @@ const Invoice = ({ data = [], onClose }) => {
          if (payment === true) {
             const res = await axiosInstance.post('/Payment/momo', {
                amount: totalAmount,
-               redirectUrl: 'http://localhost:3000/user/purchase',
+               redirectUrl: '/user/purchase',
             });
 
             await axiosInstance.post('/Order/create', requestData);
