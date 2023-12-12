@@ -52,7 +52,7 @@ const Invoice = ({ data = [], onClose }) => {
          if (payment === true) {
             const res = await axiosInstance.post('/Payment/momo', {
                amount: totalAmount,
-               redirectUrl: '/user/purchase',
+               redirectUrl: 'https://tdac-shopping-chatbot-7no6.vercel.app/',
             });
 
             await axiosInstance.post('/Order/create', requestData);
