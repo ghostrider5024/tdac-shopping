@@ -384,7 +384,7 @@
    text-decoration: none; 
    color: #000;
    overflow: hidden;
-   -webkit-line-clamp: 2; 
+   -webkit-line-clamp: 1; 
    -webkit-box-orient: vertical;
    font-size: 14px;
    line-height: 1rem;
@@ -397,7 +397,7 @@
 .text-truncate-3 {
    display: -webkit-box;
    max-width: 140px;
-   -webkit-line-clamp: 2;
+   -webkit-line-clamp: 1;
    -webkit-box-orient: vertical;
    overflow: hidden;
 }

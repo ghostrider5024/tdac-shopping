@@ -103,7 +103,6 @@ const ProductDetailPage = () => {
     }, [id])
 
 
-    console.log(product);
     return (
         <div className='content-container'>
             <section className='container product-detail-container'>
