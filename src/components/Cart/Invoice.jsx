@@ -85,7 +85,6 @@ const Invoice = ({ data = [], onClose }) => {
          setLoading(false);
          message.error('Đã có lỗi');
       }
-      console.log(auth?.name);
    };
 
 

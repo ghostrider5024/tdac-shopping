@@ -7,6 +7,8 @@ import { Layout, Menu, Dropdown, Input } from 'antd';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { ButtonCart } from './Button'
 
+
+const { Search } = Input;
 const { Header } = Layout;
 
 const AppHeader = ({ onToggleSidebar }) => {
@@ -19,6 +21,13 @@ const AppHeader = ({ onToggleSidebar }) => {
         e.preventDefault();
         searchQuery && navigate(`/search?query=${searchQuery}`);
     };
+
+
+    const searchProduct = (e) => {
+        navigate(`/search?query=${e}`);
+    };
+
+
 
     const accountMenu = (
         <Menu>
@@ -51,12 +60,14 @@ const AppHeader = ({ onToggleSidebar }) => {
                 {/*SearchBar */}
                 <div className="searchbar-header">
                     <form onSubmit={handleSubmit}>
-                        <Input.Search
+                        <Search
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
+                            onSearch={searchProduct}
                             type="text"
                             placeholder="Tìm kiếm sản phẩm"
                             className="search-bar"
+                            enterButton="Tìm kiếm"
                         />
                     </form>
                 </div>
