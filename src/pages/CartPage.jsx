@@ -130,7 +130,7 @@ const CartPage = () => {
                                             <span>Tổng tiền</span>
                                             <div className='col-children'>
                                                 <span className='totalPrice-right-cartpage'>{formatPrice(totalPrice(selectedRows))}</span>
-                                                <span className='title-vat-right-cartpage'>(Đã bao gồm VAT nếu có)</span>
+                                                <span className='title-vat-right-cartpage'>(Chưa bao gồm VAT)</span>
                                             </div>
                                         </div>
                                     </div>

@@ -186,7 +186,7 @@ const Invoice = ({ data = [], onClose }) => {
                            ))}
                            <tr>
                               <td className="totalprice-title-invoice">
-                                 Tổng tiền
+                                 Tổng tiền (Đã bao gồm VAT 10%)
                               </td>
                               <td className="totalprice-empty"></td>
                               <td className="totalprice-empty"></td>
